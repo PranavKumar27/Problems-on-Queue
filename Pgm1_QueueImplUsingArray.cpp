@@ -49,8 +49,7 @@ class QueueImpl
         int val;
         if(!IsEmpty())
         {
-            val=arr[front];
-            
+            val=arr[front];           
             arr[front]=-1;
             if(front==rear)
             {
@@ -99,8 +98,7 @@ class QueueImpl
                 cout << "}" << endl;
             }
             else
-            {
-                cout << "{";
+            {	cout << "{";
                 for(i=front;i<capacity;i++)
                 {
                     cout << arr[i] << ", ";
@@ -122,13 +120,8 @@ class QueueImpl
                         cout << arr[i] << ", ";
                     }
                 }
-                
-                
-                
                 cout << "}" << endl;
-                
-                
-            }
+	    }
         }
     }
 };
@@ -136,7 +129,7 @@ int main() {
     
     QueueImpl q1;
     
-    // q1.Dequeue();
+    q1.Dequeue();
     q1.Enqueue(1);
     q1.Enqueue(2);
     cout << "q= 1 2 .Top=" << q1.top() << endl;
@@ -166,5 +159,5 @@ int main() {
     q1.print();
     cout << "q=7.Top=" << q1.top() << endl;
     
-	return 0;
+    return 0;
 }
