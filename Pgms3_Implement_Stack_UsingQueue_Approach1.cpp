@@ -2,6 +2,7 @@
 using namespace std;
 #include <queue>
 
+//Coded on Jan 29, 2022
 //Problem : Implement queue using two stacks
 // Method 1: 
 // Push:    Add item to q2  
