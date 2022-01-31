@@ -3,7 +3,7 @@ using namespace std;
 #include <queue>
 
 //Coded @Pranav on 29th Jan, 2022
-//Problem : Implement queue using two stacks
+//Problem : Implement stack using two queues
 // Method 2: 
 // Push:    Add item to q1  
 // Pop:     Pop all the item from q1 to q2 uptill last element
