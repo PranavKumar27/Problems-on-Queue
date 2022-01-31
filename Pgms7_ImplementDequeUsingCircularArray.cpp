@@ -153,7 +153,7 @@ class MyDequeue
     
     bool IsEmpty()
     {
-        if(front==-1 && rear==0)
+        if(front==-1 && rear==-1)
             return true;
         else
             return false;
