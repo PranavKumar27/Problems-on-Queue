@@ -8,13 +8,6 @@ using namespace std;
 // Solution : Use queue to store nodes,
 //           adjacency list and visited array
 
-
-void printQ(queue<int> q);
-void printDQ(deque<int> dq);
-
-#define ROW 8
-#define COL 8
-
 class Graph
 {
   list<int> *Adj;
@@ -58,15 +51,12 @@ class Graph
                    visited[*itr]=true;
                }
            }
-        }
-        
+        }  
     }
 };
 
 int main() {
-    
-    
-    
+  
     Graph g(7);  // Always provide the correct number of nodes else SIGSEGV error is seen
     g.addEdge(0, 1);
     g.addEdge(1, 0); // a -> b and b -->a means undirectewd edge, No direction
@@ -113,43 +103,6 @@ int main() {
 //     }
     
 //     printQ(Q);
-    
-    
-    
-    return 0;
-	
-    
-}
 
-void BFS(int s)
-{
-    
-}
-
-void printQ(queue<int> q)
-{
-    enum Vertex {A,B,C,D,E,F,G,H};
-    cout << "Queue=";
-    queue<int> Q=q;
-    int val;
-    while(!Q.empty())
-    {
-        val=Q.front();
-        Vertex v=(Vertex)(val);
-        cout << v << ",";
-        Q.pop();
-    }
-    cout <<  endl;
-}
-
-void printDQ(deque<int> dq)
-{
-    cout << "Queue=";
-    deque<int> Q=dq;
-    while(!Q.empty())
-    {
-        cout << Q.front() << ",";
-        Q.pop_front();
-    }
-    cout <<  endl;
+    return 0;   
 }
