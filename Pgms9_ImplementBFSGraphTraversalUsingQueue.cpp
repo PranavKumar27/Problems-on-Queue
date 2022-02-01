@@ -2,6 +2,7 @@
 using namespace std;
 #include <list>
 #include <queue>
+#include <cstring> // For Memset()
 
 // Coded by @Pranav on Feb 1, 2022
 //Problem : Implement BFS
@@ -26,11 +27,12 @@ class Graph
     void BFS(int s)
     {
         bool *visited=new bool[V];
-        for(int j=0;j<V;j++)
-        {
-            visited[j]=false;
-        }
-        
+//         for(int j=0;j<V;j++)
+//         {
+//             visited[j]=false;
+//         }
+        memset(visited, false, sizeof visited);
+	    
         queue<int> Q;
         Q.push(s);
         visited[s]=true;
