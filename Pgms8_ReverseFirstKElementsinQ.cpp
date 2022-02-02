@@ -7,6 +7,7 @@ using namespace std;
 //Problem : Reverse first K element from given queue
 // Solution : Use deque stl and push_front and then pop_back each item
 //           and push_front to the original queue
+//           A stack could also be used here for revereing
 
 
 void printQ(queue<int> q);
