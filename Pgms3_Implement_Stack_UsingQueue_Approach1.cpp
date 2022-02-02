@@ -21,14 +21,14 @@ class MyStack
     {
         int val;
         q2.push(data);
-        
+        //Move all q1 data to q2
         while(q1.size()>0)
         {
             val=q1.front();
             q1.pop();
             q2.push(val);
         }
-        
+        //Rename q2 to q1 by copy q2 data to q1.
         while(q2.size()>0)
         {
             val=q2.front();
