@@ -61,12 +61,12 @@ int main() {
   
     Graph g(7);  // Always provide the correct number of nodes else SIGSEGV error is seen
     g.addEdge(0, 1);
-    g.addEdge(1, 0); // a -> b and b -->a means undirectewd edge, No direction
+    g.addEdge(1, 0); // a -> b and b -->a means undirected edge, No direction
     g.addEdge(1, 2); 
     g.addEdge(2, 1);
     g.addEdge(2, 3);
     g.addEdge(3, 2);
-    g.addEdge(1, 4);  // 1->4 is directed, can go from1 to 4 and not from 4 to 1
+    g.addEdge(1, 4);  // 1->4 is directed, can go from 1 to 4 and not from 4 to 1
     g.addEdge(2, 5);
     g.addEdge(4, 6);
     cout << "Following is Breadth First Traversal "
