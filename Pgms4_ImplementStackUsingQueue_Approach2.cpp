@@ -6,7 +6,7 @@ using namespace std;
 //Problem : Implement stack using two queues
 // Method 2: Making Pop of stack as costly operation
 // Push:    Add item to q1  
-// Pop:     Pop all the item from q1 to q2 uptill last element
+// Pop:     Pop all the item from q1 to q2 uptill second last element
 //          Copy all items from q2 to q1
 // Top:     Go upto last element in q1 and return it
 
