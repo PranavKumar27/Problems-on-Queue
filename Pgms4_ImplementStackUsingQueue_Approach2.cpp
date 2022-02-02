@@ -4,7 +4,7 @@ using namespace std;
 
 //Coded @Pranav on 29th Jan, 2022
 //Problem : Implement stack using two queues
-// Method 2: 
+// Method 2: Making Pop of stack as costly operation
 // Push:    Add item to q1  
 // Pop:     Pop all the item from q1 to q2 uptill last element
 //          Copy all items from q2 to q1
